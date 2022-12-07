@@ -19,7 +19,7 @@ const handleSignin = (db, bcrypt) => (req, res) => {
                 res.status(400).json('Wrong credentials');
             }
         })
-        .catch(err => res.status(400).json("Email or password doesn't math"))
+        .catch(err => res.status(400).json("Email or password doesn't match"))
     // //res.send('signing in') => signing in
     // if (req.body.email === database.users[0].email && req.body.password === database.users[0].password) {
     //     res.json(database.users[0]);

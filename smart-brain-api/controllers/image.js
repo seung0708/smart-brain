@@ -17,7 +17,7 @@ const handleApiCall = (req, res) => {
         {
             // This is the model ID of a publicly available General model. You may use any other public or custom model ID.
             model_id: "a403429f2ddf4b49b307e318f00e528b",
-            inputs: [{data: {image: {url: "https://samples.clarifai.com/dog2.jpeg"}}}]
+            inputs: [{data: {image: {url: req.body.input}}}]
         },
         metadata,
         (err, response) => {
